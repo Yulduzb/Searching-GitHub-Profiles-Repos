@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@200;300;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Albert Sans', sans-serif;
+}
+
+:root {
+    --main-color: #0d1117;
+    --assitant-color: #161b22;
+    --input-font-color: #c2c3c5;
+    --border-color: #30363d;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-color);
+    color: var(--input-font-color);
+}
+
+.user-form {
+    background-color: var(--assitant-color);
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.user-form input {
+    border: 1px solid var(--border-color);
+    background-color: var(--main-color);
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 5px;
+    color: #c2c3c5;
+    width: 100%;
+
+}
+
+
+.user-form input:focus {
+    outline: none
+}
+
+.user-form input::placeholder {
+    color: var(--input-font-color);
+
+}
+
+.user-form button {
+    position: absolute;
+    right: 24px;
+    font-size: 14px;
+    padding: 5px;
+    background: transparent;
+    color: var(--input-font-color);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.main {
+    width: 350px;
+    margin: 16px 0;
+}
+
+.card {
+    padding: 16px;
+    margin: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--assitant-color);
+    box-shadow: 6px 10px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+}
+
+.user-image {
+    width: 150px;
+    border-radius: 50%;
+    border:5px solid var(--main-color)
+}
+
+.card-info {
+    padding: 16px;
+}
+
+
+.user-name {
+    border-bottom: 1px solid var(--border-color);
+    line-height: 200%;
+    /*metin boyutunuza bağlı olarak iki katına çıkarılacaktır.*/
+
+}
+
+h2 {
+    color: #fff;
+    letter-spacing: 5px;
+}
+
+small {
+    font-weight: bold;
+    color: var(--input-font-color);
+    letter-spacing: 1.5px;
+}
+
+p {
+    color: #eee;
+    text-align: justify;
+}
+
+ul {
+    padding: 16px 0;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+ul li {
+    list-style-type: none;
+    color: #fff;
+    background-color: #30363d;
+    padding: 4px 8px;
+    margin: 4px;
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+
+ul li i {
+    margin-right: 5px;
+}
+
+.repos {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 14px;
+
+}
+
+.repos a {
+    text-decoration: none;
+    color: dodgerblue;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 4px 8px;
+    letter-spacing: 2px;
+    margin: 4px;
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.2);
+}
+
+.repos i {
+    color: var(--input-font-color);
+}
